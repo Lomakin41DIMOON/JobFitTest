@@ -1,6 +1,6 @@
 <h1 align="center">
   Это мой дипломный проект который я анпишу за кротчащие сроки.
-  <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="16"/>
+  <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="40"/>
 </h1>
 <h2 align="center">Весь прогресс я буду описывать здесь</h2>
 <h3 align="right">Гланная страница</h3>

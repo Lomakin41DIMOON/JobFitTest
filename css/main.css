@@ -1,0 +1,115 @@
+/* -------- Снятие стилей -------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+input[type="text"], input[type="password"] {
+  all: unset;
+}
+
+button {
+  all: unset;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+/* -------- Установка стилей для заголовков и текста -------- */
+
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+p {
+  font-size: 16px;
+  color: #565656;
+}
+
+.white {
+  color: #fafcff;
+}
+
+.green {
+  color: #147a63;
+}
+
+.container {
+  width: 100vh;
+  margin: auto;
+}
+
+/* -------- Шапка (фон) -------- */
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #fafcff;
+}
+
+/* -------- Шапка (лого) -------- */
+
+.logo:nth-child(-n+3) {
+  color: #ffc400; /* Цвет для первых трех букв */
+}
+
+.logo:nth-child(n+4) {
+  color: #147a63; /* Цвет для остальных букв */
+}
+
+
+/* -------- Шапка (кнопка вход|выход) -------- */
+
+/* -------- Панель навигации (Фон) -------- */
+
+nav {
+  display: flex;
+  height: 550px;
+  width: 100%;
+  background: linear-gradient(-45deg, #3a8157, #0f7a65);
+}
+
+.back-img {
+  justify-content: center;
+  align-items: center;
+  background: url("../content/img/1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+}
+
+/* -------- Панель навигации (Кнопки) -------- */
+
+.nav-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-line button {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 80px;
+  padding: 10px;
+  margin: 0 20px 0 20px;
+  text-align: center;
+}
+
+.nav-line button img {
+  width: 25px;
+}

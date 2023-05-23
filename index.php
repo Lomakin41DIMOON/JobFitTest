@@ -9,7 +9,10 @@
   <body>
     <header>
       <div class="container">
-        <h1 class="logo">JobFitTest</h1>
+        <h1 class="logo">
+          <span class="yellow">Job</span>
+          <span class="green">FitTest</span>
+        </h1>
       </div>
     </header>
     <nav>

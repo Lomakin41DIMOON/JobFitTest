@@ -46,6 +46,11 @@ p {
   color: #147a63;
 }
 
+.yellow {
+  color: #ffc400;
+}
+
+
 .container {
   width: 100vh;
   margin: auto;
@@ -61,14 +66,14 @@ header {
 
 /* -------- Шапка (лого) -------- */
 
-.logo:nth-child(-n+3) {
-  color: #ffc400; /* Цвет для первых трех букв */
+.logo {
+  width: 150px;
 }
 
-.logo:nth-child(n+4) {
-  color: #147a63; /* Цвет для остальных букв */
+.logo span {
+  margin: 0px;
+  padding: 0px;
 }
-
 
 /* -------- Шапка (кнопка вход|выход) -------- */
 

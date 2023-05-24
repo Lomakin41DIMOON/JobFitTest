@@ -25,17 +25,35 @@ a {
 h1 {
   font-size: 30px;
 }
+
 h2 {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 45px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+span {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 p {
   font-size: 16px;
+  font-weight: 600;
   color: #565656;
+}
+
+body {
+  background-color: #fafcff;
 }
 
 .white {
@@ -50,29 +68,36 @@ p {
   color: #ffc400;
 }
 
+.bold {
+  font-weight: 900;
+}
 
 .container {
-  width: 100vh;
+  width: 110vh;
   margin: auto;
 }
 
 /* -------- Шапка (фон) -------- */
 
 header {
+  display: grid;
   height: 65px;
   width: 100%;
-  background-color: #fafcff;
 }
 
 /* -------- Шапка (лого) -------- */
 
 .logo {
-  width: 150px;
+  display: inline-block;
+  height: 50px;
+  margin: auto 0;
+  vertical-align: middle;
+  width: 200px;
 }
 
 .logo span {
-  margin: 0px;
-  padding: 0px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* -------- Шапка (кнопка вход|выход) -------- */
@@ -81,19 +106,18 @@ header {
 
 nav {
   display: flex;
-  height: 550px;
+  height: 450px;
   width: 100%;
-  background: linear-gradient(-45deg, #3a8157, #0f7a65);
+  background: linear-gradient(-45deg, #268d51, #0a5f4e);
 }
 
 .back-img {
-  justify-content: center;
   align-items: center;
-  background: url("../content/img/1.png");
+  background: url("../content/img/Без имени-1.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 500px;
+  height: 400px;
 }
 
 /* -------- Панель навигации (Кнопки) -------- */
@@ -108,13 +132,97 @@ nav {
   display: inline-block;
   align-items: center;
   justify-content: center;
-  width: 110px;
+  width: 100px;
   height: 80px;
   padding: 10px;
-  margin: 0 20px 0 20px;
+  margin: 0 40px 0 40px;
   text-align: center;
 }
 
 .nav-line button img {
   width: 25px;
 }
+
+/* -------- Панель навигации (Заголовок) -------- */
+
+.title {
+  text-align: center;
+  margin: 50px auto 0;
+  width: 800px;
+}
+
+/* -------- Main -------- */
+
+main {
+  margin: 40px 0;
+}
+
+/* -------- Блок информации (line) -------- */
+
+.info-line {
+  display: flex;
+  justify-content: center;
+}
+
+/* -------- Блок информации (подблоки) -------- */
+
+.info-block {
+  text-align: center;
+  margin: 0 50px;
+  display: block;
+  width: 300px;
+}
+
+.info-block h4 {
+  margin: 10px 0;
+}
+
+/* -------- Блок информации (иконка) -------- */
+
+.icon-block {
+  display: grid;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(-45deg, #268d51, #0a5f4e);
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon-block img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  vertical-align: middle;
+  align-items: center;
+}
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */
+
+/* --------  -------- */

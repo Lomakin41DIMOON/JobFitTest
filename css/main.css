@@ -110,7 +110,7 @@ header {
 /* -------- Шапка (кнопка вход|выход) -------- */
 
 .auth {
-  
+  display: none;
   background-color: #0a5f4e;
   width: 100px;
   border-radius: 10px;

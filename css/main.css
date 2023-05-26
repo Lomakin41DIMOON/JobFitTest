@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', Arial, sans-serif;
+  user-select: none;
 }
 
 input[type="text"], input[type="password"] {
@@ -13,6 +14,11 @@ input[type="text"], input[type="password"] {
 
 button {
   all: unset;
+  cursor: pointer;
+}
+
+h3, h4, p {
+  cursor: default;
 }
 
 a {
@@ -68,10 +74,6 @@ body {
   color: #ffc400;
 }
 
-.bold {
-  font-weight: 900;
-}
-
 .container {
   width: 110vh;
   margin: auto;
@@ -97,10 +99,13 @@ header {
   width: 200px;
 }
 
-.logo span {
-  margin: auto 0;
-  text-align: center;
-  vertical-align: middle;
+.logo a {
+  transition: all .41s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.15);
+  transition: all .41s ease;;
 }
 
 /* -------- Бургер (фон) -------- */
@@ -142,7 +147,7 @@ nav {
   align-items: center;
 }
 
-.nav-line button {
+.nav-line a {
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -151,10 +156,18 @@ nav {
   padding: 10px;
   margin: 0 40px 0 40px;
   text-align: center;
+  transition: all .5s ease;
+  border-radius: 10px;
 }
 
-.nav-line button img {
+.nav-line a img {
   width: 25px;
+}
+
+.nav-line a:hover{
+  transition: all .5s ease;
+  transform: translateY(-10px);
+  background-color: rgba(10, 95, 78, .4);
 }
 
 /* -------- Панель навигации (Заголовок) -------- */
@@ -182,13 +195,22 @@ main {
 
 .info-block {
   text-align: center;
-  margin: 0 50px;
+  margin: 0 40px;
+  padding: 10px;
   display: block;
   width: 300px;
+  transition: all .8s ease;
+  border-radius: 10px;
 }
 
 .info-block h4 {
   margin: 10px 0;
+}
+
+.info-block:hover {
+  transform: scale(1.05);
+  background-color: #e9ecf1;
+  transition: all .3s ease;
 }
 
 /* -------- Блок информации (иконка) -------- */
@@ -232,4 +254,13 @@ footer {
 
 .nav-block h2 {
   margin: 20px 0;
+}
+
+.nav-block h2 {
+  transition: all .5s ease;
+}
+
+.nav-block h2:hover {
+  transform: scale(1.15);
+  transition: all .5s ease;
 }

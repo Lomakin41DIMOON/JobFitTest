@@ -1,109 +1,114 @@
 /* -------- Снятие стилей -------- */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans', Arial, sans-serif;
-  user-select: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', Arial, sans-serif;
+	user-select: none;
 }
 
-input[type="text"], input[type="password"] {
-  all: unset;
+input[type="text"],
+input[type="password"] {
+	all: unset;
 }
 
 button {
-  all: unset;
-  cursor: pointer;
+	all: unset;
+	cursor: pointer;
 }
 
-h3, h4, p {
-  cursor: default;
+h3,
+h4,
+p {
+	cursor: default;
 }
 
 a {
-  all: unset;
-  cursor: pointer;
+	all: unset;
+	cursor: pointer;
 }
 
 /* -------- Установка стилей для заголовков и текста -------- */
 
 h1 {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 h2 {
-  font-size: 14px;
-  font-weight: 600;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 h3 {
-  font-size: 35px;
-  font-weight: 700;
+	font-size: 35px;
+	font-weight: 700;
 }
 
 h4 {
-  font-size: 20px;
-  font-weight: 700;
+	font-size: 20px;
+	font-weight: 700;
 }
 
 span {
-  font-size: 30px;
-  font-weight: 600;
+	font-size: 30px;
+	font-weight: 600;
 }
 
 p {
-  font-size: 16px;
-  font-weight: 600;
-  color: #565656;
+	font-size: 16px;
+	font-weight: 600;
+	color: #565656;
 }
 
 body {
-  background-color: #fafcff;
+	background-color: #fafcff;
 }
 
 .white {
-  color: #fafcff;
+	color: #fafcff;
 }
 
 .green {
-  color: #147a63;
+	color: #147a63;
 }
 
 .yellow {
-  color: #ffc400;
+	color: #ffc400;
 }
 
 .container {
-  width: 110vh;
-  margin: auto;
+	width: 110vh;
+	margin: auto;
 }
+
 /* -------- Шапка (фон) -------- */
 
 header {
-  display: grid;
-  height: 65px;
-  width: 100%;
+	display: grid;
+	height: 65px;
+	width: 100%;
 }
 
 .header_line {
-  display: inline-block;
+	display: inline-block;
 }
 
 /* -------- Шапка (лого) -------- */
 
 .logo {
-  display: flex;
+	display: flex;
 }
 
 .logo a {
-  transition: all .41s ease;
-  height: 41px;
+	transition: all .41s ease;
+	height: 41px;
 }
 
 .logo a:hover {
-  transform: scale(1.15);
-  transition: all .41s ease;;
+	transform: scale(1.15);
+	transition: all .41s ease;
+	;
 }
 
 /* -------- Бургер (фон) -------- */
@@ -113,185 +118,185 @@ header {
 /* -------- Шапка (кнопка вход|выход) -------- */
 
 .auth {
-  display: none;
-  background-color: #0a5f4e;
-  width: 100px;
-  border-radius: 10px;
+	display: none;
+	background-color: #0a5f4e;
+	width: 100px;
+	border-radius: 10px;
 }
 
 /* -------- Панель навигации (Фон) -------- */
 
 nav {
-  display: flex;
-  height: 450px;
-  width: 100%;
-  background: linear-gradient(-45deg, #268d51, #0a5f4e);
+	display: flex;
+	height: 450px;
+	width: 100%;
+	background: linear-gradient(-45deg, #268d51, #0a5f4e);
 }
 
 .back_img {
-  align-items: center;
-  background: url("../content/img/Без имени-1.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 400px;
+	align-items: center;
+	background: url("../content/img/Без имени-1.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 400px;
 }
 
 /* -------- Панель навигации (Кнопки) -------- */
 
 .nav_line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .nav_line a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100px;
-  height: 80px;
-  padding: 10px;
-  margin: 0 40px 0 40px;
-  text-align: center;
-  transition: all .5s ease;
-  border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100px;
+	height: 80px;
+	padding: 10px;
+	margin: 0 40px 0 40px;
+	text-align: center;
+	transition: all .5s ease;
+	border-radius: 10px;
 }
 
-.nav_line a:hover{
-  transition: all .5s ease;
-  transform: translateY(-10px);
-  background-color: rgba(10, 95, 78, .4);
+.nav_line a:hover {
+	transition: all .5s ease;
+	transform: translateY(-10px);
+	background-color: rgba(10, 95, 78, .4);
 }
 
 .nav_icon {
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  width: 25px;
-  height: 25px;
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+	width: 25px;
+	height: 25px;
 }
 
 .nav_icon img {
-  width: 25px;
-  margin: auto;
+	width: 25px;
+	margin: auto;
 }
 
 /* -------- Панель навигации (Заголовок) -------- */
 
 .title {
-  text-align: center;
-  margin: 50px auto 0;
-  width: 800px;
+	text-align: center;
+	margin: 50px auto 0;
+	width: 800px;
 }
 
 /* -------- Main -------- */
 
 main {
-  margin: 40px 0;
+	margin: 40px 0;
 }
 
 /* -------- Блок информации (line) -------- */
 
 .info_line {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 /* -------- Блок информации (подблоки) -------- */
 
 .info_block {
-  text-align: center;
-  margin: 0 40px;
-  padding: 10px;
-  display: block;
-  width: 300px;
-  transition: all .8s ease;
-  border-radius: 10px;
+	text-align: center;
+	margin: 0 40px;
+	padding: 10px;
+	display: block;
+	width: 300px;
+	transition: all .8s ease;
+	border-radius: 10px;
 }
 
 .info_block h4 {
-  margin: 10px 0;
+	margin: 10px 0;
 }
 
 .info_block:hover {
-  transform: scale(1.05);
-  background-color: #e9ecf1;
-  transition: all .3s ease;
+	transform: scale(1.05);
+	background-color: #e9ecf1;
+	transition: all .3s ease;
 }
 
 /* -------- Блок информации (иконка) -------- */
 
 .icon_block {
-  display: grid;
-  margin: auto;
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(-45deg, #268d51, #0a5f4e);
-  align-items: center;
-  border-radius: 50%;
+	display: grid;
+	margin: auto;
+	width: 80px;
+	height: 80px;
+	background: linear-gradient(-45deg, #268d51, #0a5f4e);
+	align-items: center;
+	border-radius: 50%;
 }
 
 .icon_block img {
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  vertical-align: middle;
-  align-items: center;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	vertical-align: middle;
+	align-items: center;
 }
 
 /* -------- Тесты (Блоки) -------- */
 
 .tests_list {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 /* -------- Тесты (Блок) -------- */
 
 .test_block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 300px;
-  height: 400px;
-  padding: 20px;
-  margin: 0 20px;
-  border-radius: 10px 40px 10px 40px;
-  background-color: #0f7a65;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 300px;
+	height: 400px;
+	padding: 20px;
+	margin: 0 20px;
+	border-radius: 10px 40px 10px 40px;
+	background-color: #0f7a65;
 }
 
 /* -------- Тесты (Иконка) -------- */
 
 .test_icon {
-  width: 260px;
-  height: 220px;
-  border-radius: 10px 40px 10px 40px;
-  object-fit: cover;
-  margin-bottom: 20px;
+	width: 260px;
+	height: 220px;
+	border-radius: 10px 40px 10px 40px;
+	object-fit: cover;
+	margin-bottom: 20px;
 }
 
 /* -------- Тесты (Кнопка) -------- */
 
 .test_button {
-  justify-content: center;
-  align-items: center;
-  margin-top: auto;
-  width: 200px;
-  background-color: #ffc400;
-  padding: 10px;
-  border-radius: 10px;
-  color: #fafcff;
+	justify-content: center;
+	align-items: center;
+	margin-top: auto;
+	width: 200px;
+	background-color: #ffc400;
+	padding: 10px;
+	border-radius: 10px;
+	color: #fafcff;
 }
 
 /* -------- Тесты заголовок -------- */
 
 .test_title {
-  margin-bottom: 20px;
-  text-align: center;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 /* --------  -------- */
@@ -300,29 +305,30 @@ main {
 /* -------- Footer (Фон) -------- */
 
 footer {
-  background: linear-gradient(-45deg, #268d51, #0a5f4e);
-  display: flex;
-  height: 220px;
-  width: 100%;
+	background: linear-gradient(-45deg, #268d51, #0a5f4e);
+	display: flex;
+	height: 220px;
+	width: 100%;
 }
 
 /* -------- Footer (блок) -------- */
 
 .footer_line {
-  display: flex;
+	display: flex;
 }
 
 /* -------- Footer (Панель навигации) -------- */
 
-.nav_block h2 {
-  margin: 20px 0;
+.nav_block {
+	margin-left: 40px;
 }
 
 .nav_block h2 {
-  transition: all .5s ease;
+	margin: 20px 0;
+	transition: all .5s ease;
 }
 
 .nav_block h2:hover {
-  transform: scale(1.15);
-  transition: all .5s ease;
+	transform: scale(1.15);
+	transition: all .5s ease;
 }

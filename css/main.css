@@ -94,12 +94,11 @@ header {
 
 .logo {
   display: flex;
-  height: 50px;
-  width: 200px;
 }
 
 .logo a {
   transition: all .41s ease;
+  height: 41px;
 }
 
 .logo a:hover {
@@ -147,9 +146,10 @@ nav {
 }
 
 .nav_line a {
-  display: inline-block;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100px;
   height: 80px;
   padding: 10px;
@@ -159,14 +159,23 @@ nav {
   border-radius: 10px;
 }
 
-.nav_line a img {
-  width: 25px;
-}
-
 .nav_line a:hover{
   transition: all .5s ease;
   transform: translateY(-10px);
   background-color: rgba(10, 95, 78, .4);
+}
+
+.nav_icon {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+
+.nav_icon img {
+  width: 25px;
+  margin: auto;
 }
 
 /* -------- Панель навигации (Заголовок) -------- */

@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang=ru dir="ltr">
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>JobFitTest -  Главная</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1 class="logo">JobFitTest</h1>
-      </div>
-    </header>
-    <nav>
-      <div class="container">
-        <div class="back-img">
-          <div class="nav-line">
-            <button type="button" name="button">
-              <img src="content/img/free-icon-exam-4797050.png" alt="">
-              <h2 class="white">Пройти тестирование</h2>
-            </button>
-            <button type="button" name="button">
-              <img src="content/img/free-icon-information-157933.png" alt="">
-              <h2 class="white">О приложении</h2>
-            </button>
-            <button type="button" name="button">
-              <img src="content/img/free-icon-open-book-166088.png" alt="">
-              <h2 class="white">Справочный материал</h2>
-            </button>
-            <button type="button" name="button">
-              <img src="content/img/free-icon-checklist-876749.png" alt="">
-              <h2 class="white">Результаты тестирования</h2>
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <main>
 
-    </main>
-    <footer>
+<head>
+	<?php
+		require  'components/head.php'
+	?>
+	<title>JobFitTest - Главная</title>
+</head>
 
-    </footer>
-  </body>
+<body>
+	<header>
+		<?php
+			require  'components/header.php'
+		?>
+	</header>
+	<nav>
+		<?php
+			require  'components/nav.php'
+		?>
+	</nav>
+	<main>
+		<div class="container">
+			<div class="info_line">
+				<div class="info_block">
+					<div class="icon_block">
+						<img src="content/img/free-icon-efficiency-3120036.png" alt="">
+					</div>
+					<h4 class="green">Увеличение эффективности:</h4>
+					<p>Тестирование позволяет определить 
+						уровень знаний и навыков сотрудников,
+						 что может помочь в развитии индивидуальных
+						  программ обучения и повышении эффективности
+						   работы организации в целом.</p>
+				</div>
+				<div class="info_block">
+					<div class="icon_block">
+						<img src="content/img/free-icon-time-management-4534831.png" alt="">
+					</div>
+					<h4 class="green">Экономия времени и ресурсов:</h4>
+					<p>Веб-приложение позволяет сотрудникам проходить
+						 тестирование в любое удобное время и место,
+						  не требуя дополнительных ресурсов для
+						   организации тестирования.</p>
+				</div>
+				<div class="info_block">
+					<div class="icon_block">
+						<img src="content/img/free-icon-thumbs-up-4425133.png" alt="">
+					</div>
+					<h4 class="green">Удобство и легкость использования:</h4>
+					<p>Веб-приложение может быть разработано с учетом 
+						удобства пользователя и обеспечивать легкий 
+						доступ к необходимым материалам и инструкциям.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<?php
+			require  'components/footer.php'
+		?>
+	</footer>
+</body>
 </html>

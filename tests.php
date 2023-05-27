@@ -22,18 +22,18 @@
 	<main>
 		<div class="tests_list">
 			<div class="test_block">
-				<img src="content/Без имени-2.png" alt="" class="test_icon">
-				<h3 class="test_title">Русский язык</h3>
+				<img src="content/img/Без имени-2.png" alt="" class="test_icon">
+				<h4 class="test_title white">Русский язык</h4>
 				<button class="test_button">10 Вопросов</button>
 			</div>
 			<div class="test_block">
-				<img src="content/Без имени-2.png" alt="" class="test_icon">
-				<h3 class="test_title">Русский язык</h3>
+				<img src="content/img/Без имени-2.png" alt="" class="test_icon">
+				<h4 class="test_title white">Русский язык</h4>
 				<button class="test_button">10 Вопросов</button>
 			</div>
 			<div class="test_block">
-				<img src="content/Без имени-2.png" alt="" class="test_icon">
-				<h3 class="test_title">Русский язык</h3>
+				<img src="content/img/Без имени-2.png" alt="" class="test_icon">
+				<h4 class="test_title white">Русский язык</h4>
 				<button class="test_button">10 Вопросов</button>
 			</div>
 		</div>

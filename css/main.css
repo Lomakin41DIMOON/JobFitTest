@@ -87,7 +87,7 @@ header {
   width: 100%;
 }
 
-.header-line {
+.header_line {
   display: inline-block;
 }
 
@@ -130,7 +130,7 @@ nav {
   background: linear-gradient(-45deg, #268d51, #0a5f4e);
 }
 
-.back-img {
+.back_img {
   align-items: center;
   background: url("../content/img/Без имени-1.png");
   background-position: center center;
@@ -141,13 +141,13 @@ nav {
 
 /* -------- Панель навигации (Кнопки) -------- */
 
-.nav-line {
+.nav_line {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nav-line a {
+.nav_line a {
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -160,11 +160,11 @@ nav {
   border-radius: 10px;
 }
 
-.nav-line a img {
+.nav_line a img {
   width: 25px;
 }
 
-.nav-line a:hover{
+.nav_line a:hover{
   transition: all .5s ease;
   transform: translateY(-10px);
   background-color: rgba(10, 95, 78, .4);
@@ -186,14 +186,14 @@ main {
 
 /* -------- Блок информации (line) -------- */
 
-.info-line {
+.info_line {
   display: flex;
   justify-content: center;
 }
 
 /* -------- Блок информации (подблоки) -------- */
 
-.info-block {
+.info_block {
   text-align: center;
   margin: 0 40px;
   padding: 10px;
@@ -203,11 +203,11 @@ main {
   border-radius: 10px;
 }
 
-.info-block h4 {
+.info_block h4 {
   margin: 10px 0;
 }
 
-.info-block:hover {
+.info_block:hover {
   transform: scale(1.05);
   background-color: #e9ecf1;
   transition: all .3s ease;
@@ -215,7 +215,7 @@ main {
 
 /* -------- Блок информации (иконка) -------- */
 
-.icon-block {
+.icon_block {
   display: grid;
   margin: auto;
   width: 80px;
@@ -225,7 +225,7 @@ main {
   border-radius: 50%;
 }
 
-.icon-block img {
+.icon_block img {
   width: 50px;
   height: 50px;
   margin: auto;
@@ -233,8 +233,44 @@ main {
   align-items: center;
 }
 
-/* --------  -------- */
+/* -------- Тесты (Блоки) -------- */
 
+.tests_list {
+  display: flex;
+  justify-content: center;
+}
+
+/* -------- Тесты (Блок) -------- */
+
+.test_block {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px 40px 10px 40px;
+}
+
+/* -------- Тесты (Иконка) -------- */
+
+.test_icon {
+  width: 310px;
+  height: 270px;
+  border-radius: 10px 40px 10px 40px;
+}
+
+/* -------- Тесты (Кнопка) -------- */
+
+.test_button {
+
+}
+
+/* -------- Тесты заголовок -------- */
+
+.test_title {
+
+}
+
+/* --------  -------- */
+/* --------  -------- */
+/* --------  -------- */
 /* -------- Footer (Фон) -------- */
 
 footer {
@@ -246,21 +282,21 @@ footer {
 
 /* -------- Footer (блок) -------- */
 
-.footer-line {
+.footer_line {
   display: flex;
 }
 
 /* -------- Footer (Панель навигации) -------- */
 
-.nav-block h2 {
+.nav_block h2 {
   margin: 20px 0;
 }
 
-.nav-block h2 {
+.nav_block h2 {
   transition: all .5s ease;
 }
 
-.nav-block h2:hover {
+.nav_block h2:hover {
   transform: scale(1.15);
   transition: all .5s ease;
 }

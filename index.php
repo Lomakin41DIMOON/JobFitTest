@@ -21,9 +21,9 @@
 	</nav>
 	<main>
 		<div class="container">
-			<div class="info-line">
-				<div class="info-block">
-					<div class="icon-block">
+			<div class="info_line">
+				<div class="info_block">
+					<div class="icon_block">
 						<img src="content/img/free-icon-efficiency-3120036.png" alt="">
 					</div>
 					<h4 class="green">Увеличение эффективности:</h4>
@@ -33,8 +33,8 @@
 						  программ обучения и повышении эффективности
 						   работы организации в целом.</p>
 				</div>
-				<div class="info-block">
-					<div class="icon-block">
+				<div class="info_block">
+					<div class="icon_block">
 						<img src="content/img/free-icon-time-management-4534831.png" alt="">
 					</div>
 					<h4 class="green">Экономия времени и ресурсов:</h4>
@@ -43,8 +43,8 @@
 						  не требуя дополнительных ресурсов для
 						   организации тестирования.</p>
 				</div>
-				<div class="info-block">
-					<div class="icon-block">
+				<div class="info_block">
+					<div class="icon_block">
 						<img src="content/img/free-icon-thumbs-up-4425133.png" alt="">
 					</div>
 					<h4 class="green">Удобство и легкость использования:</h4>

@@ -1,6 +1,6 @@
 <div class="container">
-	<div class="back-img">
-		<div class="nav-line">
+	<div class="back_img">
+		<div class="nav_line">
 			<a href="test.php">
 				<img src="content/img/free-icon-exam-4797050.png" alt="Иконка пройти тестирование">
 				<h2 class="white">Пройти тестирование</h2>

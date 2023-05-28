@@ -1,5 +1,5 @@
 <footer>
-	<div class="container">
+	<div class="container container_mobile">
 		<div class="footer_line">
 			<h1 class="logo">
 				<a href="index.php"><span class="yellow">Job</span><span class="white">FitTest</span></a>

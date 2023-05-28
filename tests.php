@@ -9,12 +9,12 @@
 </head>
 
 <body>
-	<?php
-	require  'components/header.php'
-	?>
-	<?php
-	require  'components/nav.php'
-	?>
+	<header>
+		<?php require  'components/header.php' ?>
+	</header>
+
+	<?php require  'components/nav.php'; ?>
+
 	<main>
 		<div class="container">
 			<div class="tests_list">
@@ -63,9 +63,7 @@
 			</div>
 		</div>
 	</main>
-	<?php
-	require  'components/footer.php'
-	?>
+	<?php require  'components/footer.php' ?>
 </body>
 
 </html>

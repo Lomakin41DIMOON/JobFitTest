@@ -9,20 +9,22 @@
 </head>
 
 <body>
-	<?php
-	require  'components/header.php'
-	?>
-	<?php
-	require  'components/nav.php'
-	?>
+	<header>
+		<?php require  'components/header.php' ?>
+	</header>
+
+	<?php require  'components/nav.php'; ?>
+
 	<main>
-		<div class="container">
+		<div class="container container_mobile">
 			<div class="adv_line">
 				<div class="adv_block">
-					<div class="icon_block">
-						<img src="content/img/free-icon-efficiency-3120036.png" alt="">
+					<div class="icon_block ">
+						<div class="cover">
+							<img src="content/img/free-icon-efficiency-3120036.png" alt="">
+						</div>
 					</div>
-					<h4 class="green">Увеличение эффективности:</h4>
+					<h4 class="green ">Увеличение эффективности:</h4>
 					<p>Тестирование позволяет определить
 						уровень знаний и навыков сотрудников,
 						что может помочь в развитии индивидуальных
@@ -30,8 +32,10 @@
 						работы организации в целом.</p>
 				</div>
 				<div class="adv_block">
-					<div class="icon_block">
-						<img src="content/img/free-icon-time-management-4534831.png" alt="">
+					<div class="icon_block ">
+						<div class="cover">
+							<img src="content/img/free-icon-time-management-4534831.png" alt="">
+						</div>
 					</div>
 					<h4 class="green">Экономия времени и ресурсов:</h4>
 					<p>Веб-приложение позволяет сотрудникам проходить
@@ -40,8 +44,10 @@
 						организации тестирования.</p>
 				</div>
 				<div class="adv_block">
-					<div class="icon_block">
-						<img src="content/img/free-icon-thumbs-up-4425133.png" alt="">
+					<div class="icon_block ">
+						<div class="cover">
+							<img src="content/img/free-icon-thumbs-up-4425133.png" alt="">
+						</div>
 					</div>
 					<h4 class="green">Удобство и легкость использования:</h4>
 					<p>Веб-приложение может быть разработано с учетом
@@ -51,9 +57,9 @@
 			</div>
 		</div>
 	</main>
-	<?php
-	require  'components/footer.php'
-	?>
+
+	<?php require  'components/footer.php' ?>
+
 </body>
 
 </html>

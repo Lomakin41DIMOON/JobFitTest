@@ -9,12 +9,11 @@
 </head>
 
 <body>
-	<?php
-	require  'components/header.php'
-	?>
-	<?php
-	require  'components/nav.php'
-	?>
+	<header>
+		<?php require  'components/header.php' ?>
+	</header>
+
+	<?php require  'components/nav.php'; ?>
 	<main>
 		<div class="container">
 			<h3 class="info_title green">Справочный материал</h3>
@@ -38,9 +37,7 @@
 			</div>
 		</div>
 	</main>
-	<?php
-	require  'components/footer.php'
-	?>
+	<?php require  'components/footer.php'	?>
 </body>
 
 </html>

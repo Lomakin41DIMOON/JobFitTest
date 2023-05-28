@@ -24,4 +24,3 @@ function li($title, $img, $link)
 	</a>
 </div>";
 }
-?>

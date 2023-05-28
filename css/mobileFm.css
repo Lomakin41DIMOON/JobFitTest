@@ -267,4 +267,15 @@
         font-size: 1.4rem;
         font-family: Arial, Helvetica, sans-serif;
     }
+    .about_block{
+        margin: 30px 10px;
+    }
+    .about_block h4{
+        font-size: 0.8rem;
+    }
+    .about_title {
+        font-size: 1rem !important;
+        text-align: left;
+        margin: 10px 0;
+    }
 }

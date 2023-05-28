@@ -164,12 +164,6 @@ nav {
 	border-radius: 10px;
 }
 
-.nav_line a:hover {
-	transition: all .5s ease;
-	transform: translateY(-10px);
-	background-color: rgba(10, 95, 78, .4);
-}
-
 .nav_icon {
 	margin-bottom: 5px;
 	display: flex;
@@ -178,7 +172,7 @@ nav {
 	height: 25px;
 }
 
-.nav_icon img {
+.nav_line img {
 	width: 25px;
 	margin: auto;
 }

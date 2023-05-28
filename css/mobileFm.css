@@ -14,15 +14,21 @@
     width: 100%;
 }
 
-
 .icon_block div {
     max-width: 50%;
     margin: auto;
 }
 
-
 .logo a {
     transition: all .1s ease;
+}
+
+.question{
+    display: none;
+}
+
+.visible_test{
+    display: block;
 }
 
 @media (max-width: 480px) {
@@ -33,6 +39,8 @@
         height: 100%;
         overflow: hidden;
         overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
     }
 
     header {
@@ -44,7 +52,7 @@
         backdrop-filter: blur(10px);
         z-index: 100;
     }
-  
+
     .logo span {
         text-shadow: 0 0 7px #268d51;
     }
@@ -75,7 +83,6 @@
     }
 
     .adv_block:hover {
-
         transform: scale(1);
         background-color: #00666600;
         transition: all .2s ease;
@@ -87,7 +94,6 @@
     }
 
     .adv_line .icon_block {
-
         box-shadow: 0 5px 50px 5px rgba(50, 255, 122, 0.5);
     }
 
@@ -117,7 +123,6 @@
     }
 
     .beer a {
-
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -131,7 +136,6 @@
     }
 
     .title_mobile {
-
         width: calc(100% - 20px);
         font-size: 18px;
         text-align: right;
@@ -213,7 +217,13 @@
         display: flex;
         height: auto;
         width: 100%;
+        margin-top: auto;
+        margin-bottom: 0;
     }
+
+
+
+
 
     .tests_list {
         display: flex;

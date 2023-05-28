@@ -9,11 +9,8 @@
 </head>
 
 <body>
-	<header>
-		<?php require  'components/header.php' ?>
-	</header>
-
-	<?php require  'components/nav.php'; ?>
+	<?php require  'components/header.php';
+	require  'components/nav.php'; ?>
 	<main>
 		<div class="container">
 			<div class="about_block">
@@ -75,6 +72,8 @@
 		</div>
 	</main>
 	<?php require  'components/footer.php'	?>
+
+	<script src="js/main.js"></script>
 </body>
 
 </html>

@@ -9,11 +9,8 @@
 </head>
 
 <body>
-	<header>
-		<?php require  'components/header.php' ?>
-	</header>
-
-	<?php require  'components/nav.php'; ?>
+	<?php require  'components/header.php';
+	require  'components/nav.php'; ?>
 
 	<main>
 		<div class="container container_mobile">
@@ -59,6 +56,8 @@
 	</main>
 
 	<?php require  'components/footer.php' ?>
+
+	<script src="js/main.js"></script>
 
 </body>
 

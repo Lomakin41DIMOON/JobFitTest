@@ -9,16 +9,12 @@
 </head>
 
 <body>
-	<header>
-		<?php require  'components/header.php' ?>
-	</header>
-
-	<?php require  'components/nav.php'; ?>
-
+	<?php require  'components/header.php';
+	require  'components/nav.php'; ?>
 	<main>
 		<div class="container">
 			<div class="tests_list">
-				<a href="/">
+				<a href="test.php">
 					<div class="test_block">
 						<div class="image-container">
 							<img src="content/img/Без имени-2.png" alt="" class="test_icon">
@@ -32,7 +28,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="/">
+				<a href="test.php">
 					<div class="test_block">
 						<div class="image-container">
 							<img src="content/img/Без имени-2.png" alt="" class="test_icon">
@@ -46,7 +42,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="/">
+				<a href="test.php">
 					<div class="test_block">
 						<div class="image-container">
 							<img src="content/img/Без имени-2.png" alt="" class="test_icon">
@@ -64,6 +60,9 @@
 		</div>
 	</main>
 	<?php require  'components/footer.php' ?>
+
+	<script src="js/main.js"></script>
+
 </body>
 
 </html>

@@ -526,3 +526,51 @@ footer {
 	transition: all .5s ease;
 	background-color: rgba(10, 95, 78, .4);
 }
+
+/* Стили для обертки radio-кнопок */
+.answer {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  /* Стили для radio-кнопок */
+  .answer input[type="radio"] {
+	display: none;
+  }
+  
+  /* Стили для внешнего контейнера radio-кнопки */
+  .answer .radio-container {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 2px solid #cccccc;
+	position: relative;
+	margin-right: 10px;
+  }
+  
+  /* Стили для отмеченного состояния radio-кнопки */
+  .answer input[type="radio"]:checked + .radio-container::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 10px;
+	height: 10px;
+	background-color: #0b7954; /* Цвет отмеченной кнопки */
+	border-radius: 50%;
+  }
+  
+  /* Стили для текстового описания radio-кнопки */
+  .answer .radio-label {
+	font-size: 14px;
+	color: #0a5f4e;
+  }
+  
+  /* Стили при наведении на radio-кнопку */
+  .answer:hover input[type="radio"] + .radio-container {
+	border-color: #666666;
+	transition: border-color 0.3s ease;
+  }
+

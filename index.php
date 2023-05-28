@@ -10,17 +10,15 @@
 
 <body>
 	<header>
-		<?php
-		require  'components/header.php'
-		?>
+		<?php require  'components/header.php' ?>
 	</header>
 
-	<?php require  'components/nav.php'	?>
+	<?php require  'components/nav.php'; ?>
 
 	<main>
 		<div class="container container_mobile">
-			<div class="info_line">
-				<div class="info_block">
+			<div class="adv_line">
+				<div class="adv_block">
 					<div class="icon_block ">
 						<div class="cover">
 							<img src="content/img/free-icon-efficiency-3120036.png" alt="">
@@ -33,7 +31,7 @@
 						программ обучения и повышении эффективности
 						работы организации в целом.</p>
 				</div>
-				<div class="info_block">
+				<div class="adv_block">
 					<div class="icon_block ">
 						<div class="cover">
 							<img src="content/img/free-icon-time-management-4534831.png" alt="">
@@ -45,7 +43,7 @@
 						не требуя дополнительных ресурсов для
 						организации тестирования.</p>
 				</div>
-				<div class="info_block">
+				<div class="adv_block">
 					<div class="icon_block ">
 						<div class="cover">
 							<img src="content/img/free-icon-thumbs-up-4425133.png" alt="">
@@ -60,9 +58,7 @@
 		</div>
 	</main>
 
-		<?php
-		require  'components/footer.php'
-		?>
+	<?php require  'components/footer.php' ?>
 
 </body>
 

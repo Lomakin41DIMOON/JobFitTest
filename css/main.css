@@ -33,6 +33,7 @@ a {
 
 h1 {
 	font-size: 30px;
+	font-weight: 600;
 }
 
 h2 {
@@ -46,8 +47,8 @@ h3 {
 }
 
 h4 {
-	font-size: 20px;
-	font-weight: 700;
+	font-size: 18px;
+	font-weight: 600;
 }
 
 span {
@@ -164,6 +165,12 @@ nav {
 	border-radius: 10px;
 }
 
+.nav_line a:hover {
+	transition: all .5s ease;
+	transform: translateY(-10px);
+	background-color: rgba(10, 95, 78, .4);
+}
+
 .nav_icon {
 	margin-bottom: 5px;
 	display: flex;
@@ -172,7 +179,7 @@ nav {
 	height: 25px;
 }
 
-.nav_line img {
+.nav_icon img {
 	width: 25px;
 	margin: auto;
 }
@@ -193,14 +200,14 @@ main {
 
 /* -------- Блок информации (line) -------- */
 
-.info_line {
+.adv_line {
 	display: flex;
 	justify-content: center;
 }
 
 /* -------- Блок информации (подблоки) -------- */
 
-.info_block {
+.adv_block {
 	text-align: center;
 	margin: 0 40px;
 	padding: 10px;
@@ -210,11 +217,11 @@ main {
 	border-radius: 10px;
 }
 
-.info_block h4 {
+.adv_block h4 {
 	margin: 10px 0;
 }
 
-.info_block:hover {
+.adv_block:hover {
 	transform: scale(1.05);
 	background-color: #e9ecf1;
 	transition: all .3s ease;
@@ -260,22 +267,64 @@ main {
 	padding: 20px;
 	margin: 0 20px;
 	border-radius: 10px 40px 10px 40px;
-	background-color: #0f7a65;
+	background-color: #138a62;
+	transition: all .3s ease;
 }
+
+.test_block img {
+	filter: brightness(100%);
+	transition: filter 0.3s ease;
+}
+
+.test_block:hover {
+	transition: all .5s ease;
+	box-shadow: 0 10px 8px rgba(0, 0, 0, .3);
+	transform: translateY(-10px);
+	background-color: #0b7954;
+}
+
+.test_block:hover img {
+	filter: brightness(50%);
+	transition: filter 0.3s ease;
+}
+
+.test_block:hover h4 {
+	cursor: pointer;
+}
+
+.image-container {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fafcff;
+	padding: 10px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+  }
+  
+  .test_block:hover .overlay-text {
+	opacity: 1;
+  }
 
 /* -------- Тесты (Иконка) -------- */
 
 .test_icon {
 	width: 260px;
 	height: 220px;
-	border-radius: 10px 40px 10px 40px;
+	border-radius: 5px 30px 5px 30px;
 	object-fit: cover;
 	margin-bottom: 20px;
 }
 
 /* -------- Тесты (Кнопка) -------- */
 
-.test_button {
+.test_questions {
 	justify-content: center;
 	align-items: center;
 	margin-top: auto;
@@ -283,7 +332,8 @@ main {
 	background-color: #ffc400;
 	padding: 10px;
 	border-radius: 10px;
-	color: #fafcff;
+	border: 2px solid none;
+	transition: box-shadow .3s ease;
 }
 
 /* -------- Тесты заголовок -------- */
@@ -293,15 +343,161 @@ main {
 	text-align: center;
 }
 
-/* --------  -------- */
-/* --------  -------- */
-/* --------  -------- */
+/* -------- О приложении (блок) -------- */
+
+.info {
+	justify-content: center;
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* -------- О приложении (блоки-карточки) -------- */
+
+.info_block {
+	margin: 15px;
+	padding: 10px;
+	text-align: center;
+	width: 400px;
+	height: 150px;
+	background-color: #138a62;
+	border-radius: 10px;
+	flex-basis: 40%;
+	transition: all .3s ease;
+}
+
+.info_block h4 {
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.info_block:hover {
+	transition: all .4s ease;
+	box-shadow: 0 10px 8px rgba(0, 0, 0, .3);
+	transform: translateY(-10px);
+	cursor: pointer;
+	background-color: #0b7954;
+}
+
+/* -------- О приложении (заголовок) -------- */
+
+.info_title {
+	text-align: center;
+	font-weight: 600;
+}
+
+/* --------  () -------- */
+
+table {
+	margin: auto;
+	justify-content: center;
+	border-collapse: collapse;
+	width: 80%;
+
+}
+
+th,
+td {
+	border: none;
+	padding: 8px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+td {
+	color: #0a5f4e;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+	width: 500px;
+	text-align: left;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+	width: 200px;
+	text-align: center;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+	width: 150px;
+	text-align: center;
+}
+
+
+th {
+	background-color: #138a62;
+	color: #fafcff;
+}
+
+tr:nth-child(even) {
+	background-color: #e8ebf0;
+}
+
+tr:nth-child(odd) {
+	background-color: #fafcff;
+}
+
+/* -------- О приложении (Заголовки) -------- */
+
+.about_title {
+	font-size: 24px;
+	text-align: center;
+	margin: 30px 0 10px;
+}
+
+/* -------- О приложении (Блоки) -------- */
+
+.about_block {
+	margin: 30px;
+}
+
+/* -------- О приложении (Изображение) -------- */
+
+.about_img {
+	width: 100%;
+	box-shadow: 0 0 3px 4px #2c5c4c;
+}
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
+/* --------  () -------- */
+
 /* -------- Footer (Фон) -------- */
 
 footer {
 	background: linear-gradient(-45deg, #268d51, #0a5f4e);
 	display: flex;
-	height: 220px;
 	width: 100%;
 }
 
@@ -318,11 +514,15 @@ footer {
 }
 
 .nav_block h2 {
-	margin: 20px 0;
+	margin: 15px 0;
+	height: 24px;
+	padding: 5px;
 	transition: all .5s ease;
+	border-radius: 5px;
 }
 
 .nav_block h2:hover {
 	transform: scale(1.15);
 	transition: all .5s ease;
+	background-color: rgba(10, 95, 78, .4);
 }

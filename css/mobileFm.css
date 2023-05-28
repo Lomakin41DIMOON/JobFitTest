@@ -224,22 +224,22 @@
         box-shadow: 0 5px 50px 5px rgba(50, 255, 122, 0.3);
 
         transition: all .3s ease;
-        
-    background-color: #13ae7a;
+
+        background-color: #13ae7a;
         transform: translateY(0px);
         background-color: #0b7954;
-        width:100%;
+        width: 100%;
         padding: 20px 0;
         border-radius: 0;
     }
 
     .test_block:hover {
         box-shadow: 0 5px 50px 5px rgba(0, 255, 89, 0.8);
-        
-    background-color: #13ae7a;
+
+        background-color: #13ae7a;
         transform: translateY(0px);
         background-color: #0b7954;
-        width:100%;
+        width: 100%;
         padding: 5% 0;
         border-radius: 0;
     }
@@ -248,12 +248,14 @@
         width: 100%;
         height: 100%;
     }
+
     .test_block:hover img {
         filter: brightness(68%);
         width: 100%;
         height: 100%;
     }
-    .test_block .image-container{
+
+    .test_block .image-container {
         width: calc(100% - 10%);
         height: 220px;
         margin-bottom: 25px;
@@ -263,19 +265,44 @@
         font-size: 3rem;
         font-family: Arial, Helvetica, sans-serif;
     }
+
     .test_block h4 {
         font-size: 1.4rem;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .about_block{
+
+    .about_block {
         margin: 30px 10px;
     }
-    .about_block h4{
+
+    .about_block h4 {
         font-size: 0.8rem;
     }
+
     .about_title {
         font-size: 1rem !important;
         text-align: left;
         margin: 10px 0;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info_block {
+        width: 100%;
+        flex-basis: 100%;
+        border-radius: 0;
+        margin: 0;
+        border-top: 2px solid #138a62;
+        background-color: transparent;
+
+    }
+    .info_block .white {
+        color: #222;
+    }
+    
+    .info_block:hover .white {
+        color: white;
     }
 }

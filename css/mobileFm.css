@@ -298,11 +298,16 @@
         background-color: transparent;
 
     }
+
     .info_block .white {
         color: #222;
     }
-    
+
     .info_block:hover .white {
         color: white;
+    }
+
+    table {
+        width: 100%;
     }
 }

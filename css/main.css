@@ -8,11 +8,6 @@
 	user-select: none;
 }
 
-input[type="text"],
-input[type="password"] {
-	all: unset;
-}
-
 button {
 	all: unset;
 	cursor: pointer;
@@ -79,7 +74,7 @@ body {
 }
 
 .container {
-	width: 110vh;
+	width: 90%;
 	margin: auto;
 }
 
@@ -112,17 +107,25 @@ header {
 	;
 }
 
-/* -------- Бургер (фон) -------- */
-/* -------- Бургер (блок) -------- */
-/* -------- Бургер  -------- */
-
 /* -------- Шапка (кнопка вход|выход) -------- */
 
 .auth {
-	display: none;
-	background-color: #0a5f4e;
-	width: 100px;
-	border-radius: 10px;
+	display: block;
+	background-color: white;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	overflow: hidden;
+	box-shadow: 0 0 10px 0px linear-gradient(-45deg, #268d51, #0a5f4e);
+	transition: all .2s ease;
+	position: absolute;
+	top: calc((65px - 40px) / 2);
+	right: 40px;
+}
+
+.auth:hover {
+	transform: scale(1.2);
+	transition: all .2s ease;
 }
 
 /* -------- Панель навигации (Фон) -------- */
@@ -461,13 +464,113 @@ tr:nth-child(odd) {
 	box-shadow: 0 0 3px 4px #2c5c4c;
 }
 
-/* --------  () -------- */
+/* -------- Авторизация (фон) -------- */
+
+.auth_bg {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:  linear-gradient(-45deg, #268d51, #0a5f4e);
+}
+
+/* --------  (Форма) -------- */
+
+.auth_form {
+	margin: auto;
+	width: 420px;
+	height: 600px;
+	background-color: #fafcff;
+	border-radius: 4px;
+	padding: 60px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.auth_form h1 {
+	text-align: center;
+	font-weight: 700;
+}
+
+.auth_form label {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.auth_block {
+	margin: 20px 0;
+	width: 100%;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 4px;
+}
+
+.auth_block * {
+	width: 100%;
+}
+
+.input_block {
+	margin-top: 5px;
+	height: 42px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	background-color: #f0f0f0;
+}
+
+.input_block * {
+	height: 42px;
+}
+
+.input_block img {
+	width: 42px;
+	padding: 5px;
+	background-color: #147a63;
+	border-radius: 4px 0 0 4px;
+}
+
+.auth_input {
+	width: 100%;
+	height: 100%;
+}
+
+.auth_input input {
+	all: unset;
+	height: 100%;
+	width: 90%;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.auth_input input:focus {
+	outline: 1px solid black;
+}
+
+.line {
+	border-radius: 1;
+	height: 3px;
+	background-color: #0a5f4e;
+}
 
 /* --------  () -------- */
 
-/* --------  () -------- */
+.auth_form button {
+	color: #fafcff;
+	font-weight: 700;
+	width: 95%;
+	padding: 10px;
+	background-color: #147a63;
+}
 
 /* --------  () -------- */
+
+.error {
+	color: #d63024;
+}
 
 /* --------  () -------- */
 

@@ -1,5 +1,5 @@
 <header>
-	<div class="container heder_mobile inline">
+	<div class="container heder_mobile flex">
 		<div class="burger" id="burger">
 			<samp></samp>
 			<samp></samp>
@@ -9,10 +9,9 @@
 			<a href="index.php"><span class="yellow">Job</span><span class="green">FitTest</span></a>
 		</div>
 		<button class="auth cover">
-			<img src="content/icons/login1.png" alt="Вход">
-		</button>
-		<button>
-			<h4>Вход</h4>
+			<a href="auth.php">
+				<img src="content/icons/login1.png" alt="Вход">
+			</a>
 		</button>
 	</div>
 	<script>

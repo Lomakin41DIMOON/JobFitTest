@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once 'db/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang=ru dir="ltr">
 <head>

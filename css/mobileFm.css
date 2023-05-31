@@ -144,8 +144,6 @@
         display: none;
     }
 
-    .heder_mobile {}
-
     .auth {
         display: block;
         background-color: white;
@@ -153,7 +151,7 @@
         height: 40px;
         border-radius: 100%;
         overflow: hidden;
-        box-shadow: 0 0 10px 0px #0066666e;
+        box-shadow: 0 0 10px 0px linear-gradient(-45deg, #268d51, #0a5f4e);;
         transition: all .2s ease;
         position: absolute;
         top: calc((65px - 40px) / 2);
@@ -322,4 +320,10 @@
     table {
         width: 100%;
     }
-}
+
+    .auth_form {
+        height: 100vh;
+        width: 100%;
+    }
+
+}   

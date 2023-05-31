@@ -2,18 +2,13 @@
 <html lang=ru dir="ltr">
 
 <head>
-	<?php
-	require  'components/head.php'
-	?>
+	<?php require 'components/head.php'?>
 	<title>JobFitTest - Справочный материал</title>
 </head>
 
 <body>
-	<header>
-		<?php require  'components/header.php' ?>
-	</header>
-
-	<?php require  'components/nav.php'; ?>
+	<?php require 'components/header.php';
+	require 'components/nav.php'; ?>
 	<main>
 		<div class="container">
 			<h3 class="info_title green">Справочный материал</h3>
@@ -37,7 +32,7 @@
 			</div>
 		</div>
 	</main>
-	<?php require  'components/footer.php'	?>
+    <?php require 'components/footer.php'?>
 </body>
 
 </html>

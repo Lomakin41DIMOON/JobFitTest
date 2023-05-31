@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang=ru dir="ltr">
-
 <head>
-	<?php
-	require  'components/head.php'
-	?>
+	<?php require 'components/head.php'?>
 	<title>JobFitTest - Результаты</title>
 </head>
-
 <body>
-	<header>
-		<?php require  'components/header.php' ?>
-	</header>
-
-	<?php require  'components/nav.php'; ?>
+	<?php require 'components/header.php';
+	require 'components/nav.php'; ?>
 	<main>
 		<div class="container">
 			<table>
@@ -40,7 +33,6 @@
 			</table>
 		</div>
 	</main>
-	<?php require  'components/footer.php'	?>
+    <?php require 'components/footer.php'?>
 </body>
-
 </html>

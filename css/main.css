@@ -474,7 +474,7 @@ tr:nth-child(odd) {
 	background:  linear-gradient(-45deg, #268d51, #0a5f4e);
 }
 
-/* --------  (Форма) -------- */
+/* -------- Авторизация (Форма) -------- */
 
 .auth_form {
 	margin: auto;
@@ -497,6 +497,8 @@ tr:nth-child(odd) {
 	font-size: 18px;
 	font-weight: 600;
 }
+
+/* -------- Авторизация (подблоки) -------- */
 
 .auth_block {
 	margin: 20px 0;
@@ -521,6 +523,8 @@ tr:nth-child(odd) {
 	border-radius: 4px;
 	background-color: #f0f0f0;
 }
+
+/* -------- Авторизация (inputs) -------- */
 
 .input_block * {
 	height: 42px;
@@ -550,13 +554,15 @@ tr:nth-child(odd) {
 	outline: 1px solid black;
 }
 
+/* -------- Авторизация (декоративные блоки) -------- */
+
 .line {
 	border-radius: 1;
 	height: 3px;
 	background-color: #0a5f4e;
 }
 
-/* --------  () -------- */
+/* -------- Авторизация (Кнопка) -------- */
 
 .auth_form button {
 	color: #fafcff;
@@ -566,7 +572,7 @@ tr:nth-child(odd) {
 	background-color: #147a63;
 }
 
-/* --------  () -------- */
+/* -------- Авторизация (текст ошибки) -------- */
 
 .error {
 	color: #d63024;

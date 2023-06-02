@@ -37,7 +37,7 @@ require_once 'db/database.php';
                 <button class="auth_block" type="submit">Войти</button>
                 <div class="auth_block line"></div>
                 <?php
-                if ($_SESSION['message']) {
+                if (isset($_SESSION['message'])) {
                     echo '<Label class="error">' . $_SESSION['message'] . '</Label>';
                 }
                 unset($_SESSION['message']);

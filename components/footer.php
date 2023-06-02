@@ -5,18 +5,20 @@
 				<a href="index.php"><span class="yellow">Job</span><span class="white">FitTest</span></a>
 			</h1>
 			<div class="nav_block">
-				<a href="tests.php">
-					<h2 class="white">Пройти тестирование</h2>
-				</a>
-				<a href="about.php">
-					<h2 class="white">О приложении</h2>
-				</a>
-				<a href="info.php">
-					<h2 class="white">Справочный материал</h2>
-				</a>
-				<a href="result.php">
-					<h2 class="white">Результаты тестирования</h2>
-				</a>
+				<?php
+				if (isset($_COOKIE["session"])) {
+					li2('Пройти тестирование', 'tests.php');
+					li2('О приложении', 'about.php');
+					li2('Справочный материал', 'info.php');
+					li2('Результаты тестирования', 'result.php');
+				} else {
+					li2('Пройти тестирование', 'auth.php');
+					li2('О приложении', 'auth.php');
+					li2('Справочный материал', 'auth.php');
+					li2('Результаты тестирования', 'auth.php');
+					$_SESSION['message'] = 'Вы не авторизованны в системе, просим вас пройти авторизацию для пользования приложением!';
+				}
+				?>
 			</div>
 		</div>
 	</div>

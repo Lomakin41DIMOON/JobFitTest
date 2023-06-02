@@ -1,6 +1,9 @@
 <?php
 session_start();
 require_once 'db/database.php';
+if (!isset($_COOKIE["session"])){
+	header("Refresh:0; url=auth.php");
+}
 ?>
 
 <!DOCTYPE html>

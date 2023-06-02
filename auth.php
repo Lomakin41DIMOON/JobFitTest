@@ -21,7 +21,7 @@ require_once 'db/database.php';
                     <div class="input_block">
                         <img src="content/icons/login4.png">
                         <div class="auth_input">
-                            <input type="text" name="login" placeholder="Логин" checked>
+                            <input type="text" name="login" placeholder="Логин">
                         </div>
                     </div>
                 </div>

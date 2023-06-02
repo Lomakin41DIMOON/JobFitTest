@@ -1,6 +1,9 @@
 <?php
 session_start();
 require_once 'db/database.php';
+if (!isset($_COOKIE["session"])){
+	header("Refresh:0; url=auth.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,28 +17,6 @@ require_once 'db/database.php';
 	require 'components/nav.php'; ?>
 	<main>
 		<div class="container">
-			<table>
-				<tr>
-					<th>Название</th>
-					<th>Статус</th>
-					<th>Баллы</th>
-				</tr>
-				<tr>
-					<td>Русский язык</td>
-					<td>Не пройден</td>
-					<td>0/10</td>
-				</tr>
-				<tr>
-					<td>Русский язык</td>
-					<td>Не пройден</td>
-					<td>0/10</td>
-				</tr>
-				<tr>
-					<td>Русский язык</td>
-					<td>Не пройден</td>
-					<td>0/10</td>
-				</tr>
-			</table>
 		</div>
 	</main>
     <?php require 'components/footer.php'?>

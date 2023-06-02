@@ -128,6 +128,10 @@ header {
 	transition: all .2s ease;
 }
 
+.none {
+	display: none;
+}
+
 /* -------- Панель навигации (Фон) -------- */
 
 nav {
@@ -391,57 +395,7 @@ main {
 
 /* --------  () -------- */
 
-table {
-	margin: auto;
-	justify-content: center;
-	border-collapse: collapse;
-	width: 80%;
 
-}
-
-th,
-td {
-	border: none;
-	padding: 8px;
-	font-size: 16px;
-	font-weight: 700;
-}
-
-td {
-	color: #0a5f4e;
-}
-
-th:nth-child(1),
-td:nth-child(1) {
-	width: 500px;
-	text-align: left;
-}
-
-th:nth-child(2),
-td:nth-child(2) {
-	width: 200px;
-	text-align: center;
-}
-
-th:nth-child(3),
-td:nth-child(3) {
-	width: 150px;
-	text-align: center;
-}
-
-
-th {
-	background-color: #138a62;
-	color: #fafcff;
-}
-
-tr:nth-child(even) {
-	background-color: #e8ebf0;
-}
-
-tr:nth-child(odd) {
-	background-color: #fafcff;
-}
 
 /* -------- О приложении (Заголовки) -------- */
 
@@ -501,7 +455,7 @@ tr:nth-child(odd) {
 /* -------- Авторизация (подблоки) -------- */
 
 .auth_block {
-	margin: 20px 0;
+	margin: 15px 0;
 	width: 100%;
 	text-align: left;
 	display: flex;
@@ -576,11 +530,83 @@ tr:nth-child(odd) {
 
 .error {
 	color: #d63024;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-/* --------  () -------- */
+/* -------- Личный кабинет (Блоки) -------- */
 
-/* --------  () -------- */
+.profile_block {
+	margin: 50px auto;
+	min-width: 200px;
+	max-width: 600px;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile_blocks {
+	margin: 40px 0;
+}
+
+.profile_blocks h1 {
+	margin-left: 10px;
+}
+
+.profile_blocks h4 {
+	background-color: #e8ebf0;
+	padding: 10px;
+	border-radius: 10px;
+}
+/* -------- Личный кабинет (Список тестов) -------- */
+
+table {
+	margin: auto;
+	justify-content: center;
+	border-collapse: collapse;
+	width: 70%;
+
+}
+
+th,td {
+	border: none;
+	padding: 8px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+td {
+	color: #0a5f4e;
+}
+
+th:nth-child(1),td:nth-child(1) {
+	width: 500px;
+	text-align: left;
+}
+
+th:nth-child(2),td:nth-child(2) {
+	width: 200px;
+	text-align: center;
+}
+
+th:nth-child(3),td:nth-child(3) {
+	width: 150px;
+	text-align: center;
+}
+
+th {
+	background-color: #138a62;
+	color: #fafcff;
+}
+
+tr:nth-child(even) {
+	background-color: #e8ebf0;
+}
+
+tr:nth-child(odd) {
+	background-color: #fafcff;
+}
 
 /* --------  () -------- */
 

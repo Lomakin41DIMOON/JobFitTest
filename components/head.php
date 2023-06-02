@@ -7,3 +7,4 @@
 <link rel="stylesheet" href="css/mobileFm.css">
 <script src="jquery/jquery-3.7.0.min.js"></script>
 <link rel="icon" type="image/png" sizes="32x32" href="content/img/Без имени-4.png">
+<?php require_once 'func/func.php';?>

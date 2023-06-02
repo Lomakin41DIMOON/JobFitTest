@@ -9,9 +9,13 @@
 			<a href="index.php"><span class="yellow">Job</span><span class="green">FitTest</span></a>
 		</div>
 		<button class="auth cover">
-			<a href="auth.php">
-				<img src="content/icons/login1.png" alt="Вход">
-			</a>
+			<?php
+				if (isset($_COOKIE["session"])) {
+					auth('profile.php', 'content/icons/login1.png', 'профиль');
+				} else {
+					auth('auth.php', 'content/icons/login1.png', 'вход');
+				}
+			?>
 		</button>
 	</div>
 	<script>

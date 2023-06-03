@@ -22,6 +22,7 @@ if (isset($_COOKIE["session"])) {
 	$fio = $user_surname . " " . $user_name . " " . $user_patronymic;
 } else {
 	header("Refresh:0; url=auth.php");
+	$_SESSION['message'] = 'Вы не авторизованны в системе, или время сессии закончилось. Просим вас пройти авторизацию для пользования приложением!';
 }
 ?>
 
@@ -52,8 +53,7 @@ if (isset($_COOKIE["session"])) {
 					<h4 class="green"><? echo $user_post ?></h4>
 				</div>
 				<div class="profile_blocks">
-					<h1 class="green">Должность:</h1>
-					<h4 class="green"><? echo $user_post ?></h4>
+					<h1 class="green">Ваши результаты:</h1>
 				</div>
 			</div>
 			<table>
@@ -62,7 +62,9 @@ if (isset($_COOKIE["session"])) {
 					<th>Статус</th>
 					<th>Баллы</th>
 				</tr>
+
 				<?php
+
 				$sql2 = "SELECT tr.`id-result`, tr.`id-user`, tr.`id-theme`, tt.`title-theme`, SUM(tq.`ball-question`) AS `total-ball`, tr.`number-balls`
 				FROM `table-result` tr
 				JOIN `table-theme` tt ON tr.`id-theme` = tt.`id-theme`
@@ -81,8 +83,8 @@ if (isset($_COOKIE["session"])) {
 						}
 						?>
 						<tr>
-							<td><?php echo $row["title-theme"]; ?></td>
-							<td><?php echo $status; ?></td>
+							<td><? echo $row["title-theme"] ?></td>
+							<td><? echo $status ?></td>
 							<td><?php echo $row["number-balls"] . "/" . $row["total-ball"]; ?></td>
 						</tr>
 						<?php

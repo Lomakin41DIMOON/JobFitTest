@@ -6,7 +6,14 @@
 			<samp></samp>
 		</div>
 		<div class="logo">
-			<a href="index.php"><span class="yellow">Job</span><span class="green">FitTest</span></a>
+			<?php
+			if (isset($_COOKIE["session"])) {
+				echo '<a href="index.php"><span class="yellow">Job</span><span class="green">FitTest</span></a>';
+			} else {
+				echo '<a href="auth.php"><span class="yellow">Job</span><span class="green">FitTest</span></a>';
+				$_SESSION['message'] = 'Вы не авторизованны в системе, или время сессии закончилось. просим вас пройти авторизацию для пользования приложением!';
+			}
+			?>
 		</div>
 		<button class="auth cover">
 			<?php

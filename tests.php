@@ -3,6 +3,7 @@ session_start();
 require_once 'db/database.php';
 if (!isset($_COOKIE["session"])){
 	header("Refresh:0; url=auth.php");
+	$_SESSION['message'] = 'Вы не авторизованны в системе, или время сессии закончилось. Просим вас пройти авторизацию для пользования приложением!';
 }
 ?>
 

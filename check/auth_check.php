@@ -10,7 +10,7 @@ if ($login != NULL) {
         if (mysqli_num_rows($check_user) > 0) {
             $user = mysqli_fetch_assoc($check_user);
             $user_id = $user['id-user'];
-            setcookie("session", $user_id, time() + 3600, "/", "localhost2", false, true);
+            setcookie("session", $user_id, 0, "/", "jobfittest", false, true);
             header('Location: ../index.php');
         } else {
             $_SESSION['message'] = 'Неверный логин или пароль';

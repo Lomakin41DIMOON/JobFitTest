@@ -5,7 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans', Arial, sans-serif;
-	user-select: none;
+	/*user-select: none;*/
 }
 
 button {
@@ -76,6 +76,12 @@ body {
 .container {
 	width: 90%;
 	margin: auto;
+}
+
+.center {
+	text-align: center;
+	align-items: center;
+	margin: 30px auto;
 }
 
 /* -------- Шапка (фон) -------- */
@@ -258,13 +264,14 @@ main {
 
 .tests_list {
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
 }
 
 /* -------- Тесты (Блок) -------- */
 
 .test_block {
 	display: flex;
+	margin: 20px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -272,7 +279,6 @@ main {
 	width: 300px;
 	height: 400px;
 	padding: 20px;
-	margin: 0 20px;
 	border-radius: 10px 40px 10px 40px;
 	background-color: #138a62;
 	transition: all .3s ease;
@@ -302,9 +308,9 @@ main {
 .image-container {
 	position: relative;
 	display: inline-block;
-  }
-  
-  .overlay-text {
+}
+
+.overlay-text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -313,11 +319,11 @@ main {
 	padding: 10px;
 	opacity: 0;
 	transition: opacity 0.3s ease;
-  }
-  
-  .test_block:hover .overlay-text {
+}
+
+.test_block:hover .overlay-text {
 	opacity: 1;
-  }
+}
 
 /* -------- Тесты (Иконка) -------- */
 
@@ -325,7 +331,7 @@ main {
 	width: 260px;
 	height: 220px;
 	border-radius: 5px 30px 5px 30px;
-	object-fit: cover;
+	object-fit: scale-down;
 	margin-bottom: 20px;
 }
 
@@ -393,10 +399,6 @@ main {
 	font-weight: 600;
 }
 
-/* --------  () -------- */
-
-
-
 /* -------- О приложении (Заголовки) -------- */
 
 .about_title {
@@ -425,7 +427,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background:  linear-gradient(-45deg, #268d51, #0a5f4e);
+	background: linear-gradient(-45deg, #268d51, #0a5f4e);
 }
 
 /* -------- Авторизация (Форма) -------- */
@@ -536,6 +538,10 @@ main {
 	align-items: center;
 }
 
+.block {
+	height: 20vh;
+}
+
 /* -------- Личный кабинет (Блоки) -------- */
 
 .profile_block {
@@ -559,6 +565,7 @@ main {
 	padding: 10px;
 	border-radius: 10px;
 }
+
 /* -------- Личный кабинет (Список тестов) -------- */
 
 table {
@@ -569,7 +576,8 @@ table {
 
 }
 
-th,td {
+th,
+td {
 	border: none;
 	padding: 8px;
 	font-size: 16px;
@@ -580,17 +588,20 @@ td {
 	color: #0a5f4e;
 }
 
-th:nth-child(1),td:nth-child(1) {
+th:nth-child(1),
+td:nth-child(1) {
 	width: 500px;
 	text-align: left;
 }
 
-th:nth-child(2),td:nth-child(2) {
+th:nth-child(2),
+td:nth-child(2) {
 	width: 200px;
 	text-align: center;
 }
 
-th:nth-child(3),td:nth-child(3) {
+th:nth-child(3),
+td:nth-child(3) {
 	width: 150px;
 	text-align: center;
 }
@@ -608,25 +619,56 @@ tr:nth-child(odd) {
 	background-color: #fafcff;
 }
 
-/* --------  () -------- */
+/* -------- Личный кабинет (Кнопка выхода) -------- */
+
+.exit {
+	display: flex;
+	background-color: #0b7954;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px;
+	transition: all .4s ease;
+	margin: 20px auto;
+}
+
+.exit h4 {
+	cursor: pointer;
+}
+
+.exit:hover {
+	transform: scale(1.1);
+	transition: all .4s ease;
+}
+
+/* -------- Результаты (Блоки) -------- */
+
+.result_block {
+	margin: 50px auto;
+	min-width: 200px;
+	max-width: 600px;
+	align-items: center;
+	justify-content: center;
+}
+
+.result_blocks {
+	margin: 40px 0;
+}
+
+.result_blocks h1 {
+	margin-left: 10px;
+}
+
+.result_blocks h4 {
+	background-color: #e8ebf0;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10px 0;
+}
 
 /* --------  () -------- */
 
-/* --------  () -------- */
-
-/* --------  () -------- */
-
-/* --------  () -------- */
-
-/* --------  () -------- */
-
-/* --------  () -------- */
-
-/* --------  () -------- */
-
-/* --------  () -------- */
-
-/* --------  () -------- */
 
 /* -------- Footer (Фон) -------- */
 

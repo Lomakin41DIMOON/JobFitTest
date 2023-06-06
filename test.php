@@ -1,70 +1,71 @@
 <?php
 session_start();
 require_once 'db/database.php';
-if (!isset($_COOKIE["session"])){
-	header("Refresh:0; url=auth.php");
-	$_SESSION['message'] = 'Вы не авторизованны в системе, или время сессии закончилось. Просим вас пройти авторизацию для пользования приложением!';
+if (!isset($_COOKIE["session"])) {
+    header("Refresh:0; url=auth.php");
+    $_SESSION['message'] = 'Вы не авторизованны в системе, или время сессии закончилось. Просим вас пройти авторизацию для пользования приложением!';
 }
+$id_theme = $_GET['theme']
 ?>
 
 <!DOCTYPE html>
 <html lang=ru dir="ltr">
 
 <head>
-    <?php require  'components/head.php'?>
+    <?php require  'components/head.php' ?>
     <title>JobFitTest - Тестирование</title>
 </head>
+
 <body>
     <?php require 'components/header.php';
-    require 'components/nav.php';?>
+    require 'components/nav.php'; ?>
     <main>
         <div class="container">
-            <div class="question">
-                <h1 class="green">Вопрос №1</h1>
-                <h4 class="green">Текст для вопроса</h4>
-                <div class="answer_list">
-                    <div class="answer">1</div>
-                    <div class="answer">2</div>
-                    <div class="answer">3</div>
-                    <div class="answer">4</div>
-                </div>
-            </div>
-            <div class="question">
-                <h1 class="green">Вопрос №2</h1>
-                <h4 class="green">Текст для вопроса</h4>
-                <div class="answer_list">
-                    <div class="answer">1</div>
-                    <div class="answer">2</div>
-                    <div class="answer">3</div>
-                    <div class="answer">4</div>
-                </div>
-            </div>
+            <form class="" action="check/check_test.php?id=<? echo $id_theme ?>" method="post">
+                <?php
+                $sql_question = "SELECT * FROM `table-question` WHERE `id-theme` = $id_theme";
 
-            <button id="bnt_back" onclick="bnt_back()" data-id="0">< Предыдущий вопрос</button>
-            <button id="bnt_next" onclick="bnt_next()">Следующий вопрос ></button>
+                $result_question = $connect->query($sql_question);
 
-            <script>
-                $(".question").eq(0).addClass('visible_test');
+                if ($result_question->num_rows > 0) {
+                    $counter = 1;
+                    while ($row_question = $result_question->fetch_assoc()) {
 
-                function bnt_next() {
-                    var id = $("#bnt_back").data("id");
-                    var max_id = $(".question").length - 1;
-                    if (id >= max_id) require;
-                    $(".question").removeClass("visible_test");
-                    $(".question").eq(id + 1).addClass('visible_test');
-                    $("#bnt_back").data("id", id + 1);
+                        $id_question = $row_question["id-question"];
+                        $text_question = $row_question["text-question"];
+
+                        $sql_answer = "SELECT * FROM `table-answer` WHERE `id-question` = $id_question";
+
+                        $result_answer = $connect->query($sql_answer);
+                ?>
+                        <div class="">
+                            <h1 class="green">Вопрос №<? echo $counter ?></h1>
+                            <h4 class="green"><? echo $text_question ?></h4>
+                            <div class="answer_list">
+                                <?php
+                                while ($row_answer = $result_answer->fetch_assoc()) {
+                                    if ($row_answer["id-question"] == $row_question["id-question"]) {
+                                        $id_answer = $row_answer["id-answer"];
+                                        $text_answer = $row_answer["text-answer"];
+                                ?>
+                                        <div class="answer"><input type="radio" name="question-<? echo $id_question ?>" value="<? echo $id_answer ?>"> <? echo $text_answer ?></div>
+                                <?php
+                                    }
+                                }
+                                ?>
+                            </div>
+                        </div>
+                <?php
+                        $counter++;
+                    }
                 }
-
-                function bnt_back() {
-                    var id = $("#bnt_back").data("id");
-                    if (id <= 0) require;
-                    $(".question").removeClass("visible_test");
-                    $(".question").eq(id - 1).addClass('visible_test');
-                    $("#bnt_back").data("id", id - 1);
-                }
-            </script>
+                ?>
+                <button type="submit">Закончить тест</button>
+            </form>
         </div>
+
     </main>
-    <?php require 'components/footer.php'?>
+    <?php require 'components/footer.php' ?>
 </body>
+
 </html>

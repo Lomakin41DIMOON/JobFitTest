@@ -25,4 +25,3 @@ function auth($link, $img, $alt)
         <img src='$img' alt='$alt'>
     </a>";
 }
-?>

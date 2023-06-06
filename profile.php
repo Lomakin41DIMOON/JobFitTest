@@ -70,9 +70,9 @@ if (isset($_COOKIE["session"])) {
 				JOIN `table-theme` tt ON tr.`id-theme` = tt.`id-theme`
 				JOIN `table-question` tq ON tr.`id-theme` = tq.`id-theme`
 				WHERE tr.`id-user` = $user_id
-				GROUP BY tr.`id-result`, tr.`id-user`, tr.`id-theme`, tt.`title-theme`, tr.`number-balls`";	   
+				GROUP BY tr.`id-result`, tr.`id-user`, tr.`id-theme`, tt.`title-theme`, tr.`number-balls`";
 				$result2 = $connect->query($sql2);
-				
+
 				if ($result2->num_rows > 0) {
 					while ($row = $result2->fetch_assoc()) {
 						$passingPercentage = 0.8;
@@ -81,20 +81,36 @@ if (isset($_COOKIE["session"])) {
 						} else {
 							$status = "Не пройден";
 						}
-						?>
+				?>
 						<tr>
 							<td><? echo $row["title-theme"] ?></td>
 							<td><? echo $status ?></td>
 							<td><?php echo $row["number-balls"] . "/" . $row["total-ball"]; ?></td>
 						</tr>
-						<?php
+				<?php
 					}
 				} else {
 					echo '<h1 class="error">Упс... Кажется у вас нету результатов!</h1>';
 				}
-				
+
 				?>
 			</table>
+			<div class="profile_block">
+				<?php
+				if ($user_post == 'Технический специалист') {
+					echo '<button type="button" class="exit">
+				 <a href="admpanel.php">
+					 <h4 class="white">Войти в панель администратора</h4>
+				 </a>
+			 </button>';
+				}
+				?>
+				<button type="button" class="exit">
+					<a href="check/exit.php">
+						<h4 class="white">Выйти из системы</h4>
+					</a>
+				</button>
+			</div>
 		</div>
 	</main>
 	<?php require 'components/footer.php' ?>

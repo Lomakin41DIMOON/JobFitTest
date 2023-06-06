@@ -23,11 +23,11 @@
     transition: all .1s ease;
 }
 
-.question{
+.question {
     display: none;
 }
 
-.visible_test{
+.visible_test {
     display: block;
 }
 
@@ -151,7 +151,8 @@
         height: 40px;
         border-radius: 100%;
         overflow: hidden;
-        box-shadow: 0 0 10px 0px linear-gradient(-45deg, #268d51, #0a5f4e);;
+        box-shadow: 0 0 10px 0px linear-gradient(-45deg, #268d51, #0a5f4e);
+        ;
         transition: all .2s ease;
         position: absolute;
         top: calc((65px - 40px) / 2);
@@ -218,10 +219,6 @@
         margin-top: auto;
         margin-bottom: 0;
     }
-
-
-
-
 
     .tests_list {
         display: flex;
@@ -326,4 +323,4 @@
         width: 100%;
     }
 
-}   
+}

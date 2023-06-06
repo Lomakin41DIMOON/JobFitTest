@@ -30,7 +30,7 @@ require_once 'db/database.php';
                     <div class="input_block">
                         <img src="content/icons/free-icon-lock-4671568.png">
                         <div class="auth_input">
-                            <input type="password" name="password"  placeholder="Пароль">
+                            <input type="password" name="password" placeholder="Пароль">
                         </div>
                     </div>
                 </div>

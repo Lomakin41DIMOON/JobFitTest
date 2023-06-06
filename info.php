@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once 'db/database.php';
-if (!isset($_COOKIE["session"])){
+if (!isset($_COOKIE["session"])) {
 	header("Refresh:0; url=auth.php");
 	$_SESSION['message'] = 'Вы не авторизованны в системе, или время сессии закончилось. Просим вас пройти авторизацию для пользования приложением!';
 }
@@ -11,7 +11,7 @@ if (!isset($_COOKIE["session"])){
 <html lang=ru dir="ltr">
 
 <head>
-	<?php require 'components/head.php'?>
+	<?php require 'components/head.php' ?>
 	<title>JobFitTest - Справочный материал</title>
 </head>
 
@@ -41,7 +41,7 @@ if (!isset($_COOKIE["session"])){
 			</div>
 		</div>
 	</main>
-    <?php require 'components/footer.php'?>
+	<?php require 'components/footer.php' ?>
 </body>
 
 </html>
